@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160914114559",
+    "isomorphic-fetch": "registry:dt/isomorphic-fetch#0.0.0+20160830175641",
+    "qs": "registry:dt/qs#6.2.0+20160707010053"
+  }
+}
