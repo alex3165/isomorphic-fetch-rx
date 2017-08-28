@@ -1,12 +1,22 @@
 {
   "compilerOptions": {
-    "outDir": "lib",
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": ["es6", "dom"],
     "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true,
     "moduleResolution": "node",
-    "rootDir": "src",
-    "declaration": true
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es5",
+    "types": ["jest"]
   },
   "exclude": [
     "node_modules",

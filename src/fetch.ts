@@ -14,7 +14,7 @@ export interface ReqArgs extends Args {
   method: string;
 };
 
-const merge = (...args) => Object.assign({}, ...args);
+const merge = (...args: any[]) => Object.assign({}, ...args);
 
 const defaultArgs = {
   method: 'GET',
@@ -28,7 +28,7 @@ const isQueryString = (method: string) => (
 
 const buildQueryString = (url: string, params: any) => `${url}?${QueryString.stringify(params)}`;
 
-export const fetch = (url: string, { method, params, token }: ReqArgs = defaultArgs): Promise<IResponse> => {
+export const fetch = (url: string, { method, params, token }: ReqArgs = defaultArgs) => {
 
   let body;
 
